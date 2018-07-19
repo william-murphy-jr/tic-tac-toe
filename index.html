@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.css.map"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-12">
+
+            </div>
+        </div>
+        
+        <div class="row">
+            <div id="playingSurface" class="col-xs-8 offset-xs-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-2 offset-xl-5 text-center">
+                <div id="row1" class="row">
+                    <h1>Tic Tac Toc</h1>
+                </div>
+                <div id="rowHeader" class="row">
+                    <div class="game-box col-xs-4"><button type="button" id="0" class="inPlayBtn">1</button></div>
+                    <div class="game-box col-xs-4"><button type="button" id="1" class="inPlayBtn">2</button></div>
+                    <div class="game-box col-xs-4"><button type="button" id="2" class="inPlayBtn">3</button></div>
+                </div>
+                <div class="row">
+                    <div class="game-box col-xs-4"><button type="button" id="3" class="inPlayBtn">4</button></div>
+                    <div class="game-box col-xs-4"><button type="button" id="4" class="inPlayBtn">5</button></div>
+                    <div class="game-box col-xs-4"><button type="button" id="5" class="inPlayBtn">6</button></div>
+                </div>
+                <div class="row">
+                    <div class="game-box col-xs-4"><button type="button" id="6" class="inPlayBtn">7</button></div>
+                    <div class="game-box col-xs-4"><button type="button" id="7" class="inPlayBtn">8</button></div>
+                    <div class="game-box col-xs-4"><button type="button" id="8" class="inPlayBtn">9</button></div>
+                </div>
+               
+                <div class="game-box text-center" style=""><p id="msgBox" style="margin-top:1rem;"></p></div>
+                
+                <div class="row">
+                    <button class="newGame gameBtn" style="">New Game</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" style="visibility:hidden;" id="hiddenModalBtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch Modal
+    </button>
+      
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="modalLabel">Modal title</h5> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <p class="modalMsg">test</p>
+              <p class="msgBody">Play Another Game?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modalClose" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary newGame">New Game</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div> <!-- container-fluid -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/js/bootstrap.js"></script>
+    <script src="js/tictactoe.js"></script>
+</body>
+
+
+</html>
